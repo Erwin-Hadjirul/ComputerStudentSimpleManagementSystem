@@ -8,7 +8,7 @@ Made to complete the portfolio website.
 
 ## Software Description
 
-This is a website developed with C# and .NET Windows Form.
+This is a Windows system developed using C# and .NET Windows Form.
 
 ## Description
 
