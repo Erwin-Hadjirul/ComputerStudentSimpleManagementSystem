@@ -1,5 +1,6 @@
 ﻿using ComputerStudent_SimpleManagementSystem.Models;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ComputerStudent_SimpleManagementSystem.Services;
 
@@ -11,12 +12,9 @@ public class CSSMSService
     private CSSMSService()
     {
         _connection = new SqlConnection(
-            "Data Source=TECH-WANNABE;" +
-            "Initial Catalog=CSSMS_DB;" +
-            "Integrated Security=True;");
+            ConfigurationManager.ConnectionStrings["CSSMS_DB"].ConnectionString);
 
-        // Uncomment this (very important!)
-        //RootData(_connection);
+        RootData(_connection);
     }
 
     public static CSSMSService GetInstance()
@@ -284,6 +282,9 @@ public class CSSMSService
 
             // Create tables
             string query = @"
+                                DROP TABLE IF EXISTS BSCS;
+                                DROP TABLE IF EXISTS BSIT;
+
                                 CREATE TABLE BSCS (
                                     Id int PRIMARY KEY IDENTITY(1, 1) NOT NULL,
                                     Name varchar(50) NOT NULL,
