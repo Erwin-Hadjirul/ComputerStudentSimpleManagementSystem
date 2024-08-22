@@ -30,6 +30,15 @@ namespace ComputerStudent_SimpleManagementSystem
         {
             try
             {
+                // All textboxes must be filled up first
+                if (string.IsNullOrWhiteSpace(txtName.Text) ||
+                    string.IsNullOrWhiteSpace(txtAge.Text) ||
+                    string.IsNullOrWhiteSpace(txtYrLvl.Text) ||
+                    string.IsNullOrWhiteSpace(txtSpecial.Text))
+                {
+                    throw new Exception("Please complete the filling up of the form!");
+                }
+
                 if (!_isBSCS)
                 {
                     // BSIT
@@ -76,10 +85,10 @@ namespace ComputerStudent_SimpleManagementSystem
 
         private void ClearControls()
         {
-            txtName.Text = "";
-            txtAge.Text = "";
-            txtYrLvl.Text = "";
-            txtSpecial.Text = "";
+            txtName.Clear();
+            txtAge.Clear();
+            txtYrLvl.Clear();
+            txtSpecial.Clear();
         }
     }
 }
