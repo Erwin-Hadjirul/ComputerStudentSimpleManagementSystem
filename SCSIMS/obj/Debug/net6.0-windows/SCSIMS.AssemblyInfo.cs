@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SCSIMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8374f155935c8942ddc2172f30ed447d339c6d9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5513ad289d51739be76e95b6ab0483cf04839cfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SCSIMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SCSIMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
