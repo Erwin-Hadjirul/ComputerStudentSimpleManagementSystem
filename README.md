@@ -1,4 +1,4 @@
-# ![Logo](favicon_io/favicon.ico) Simple Computer Student Information Management System
+# ![Logo](favicon_io/SCSIMS_Icon.ico) Simple Computer Student Information Management System
 
 ![year](https://img.shields.io/badge/year-2023-blue)
 ![year](https://img.shields.io/badge/year-2024-blue)
